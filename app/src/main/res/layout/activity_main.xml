@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<androidx.coordinatorlayout.widget.CoordinatorLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+
+    android:id="@+id/coordinator"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <androidx.fragment.app.FragmentContainerView
+        android:id="@+id/main_fragmentContainerView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="?attr/actionBarSize"/>
+
+
+    <com.google.android.material.bottomappbar.BottomAppBar
+        android:id="@+id/bab"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:backgroundTint="@android:color/transparent"
+        app:contentInsetEnd="0dp"
+        app:contentInsetStart="0dp"
+        android:layout_gravity="bottom"
+        android:theme="@style/AppTheme.BottomBar"
+        app:fabAlignmentMode="end">
+
+        <com.google.android.material.bottomnavigation.BottomNavigationView
+            android:id="@+id/bottomNavView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@android:color/transparent"
+            app:itemIconTint="@color/colorBlue"
+            app:itemTextColor="@color/colorBlue"
+            android:elevation="0dp"
+            android:outlineProvider="none"
+            app:menu="@menu/bottom_nav"
+            android:layout_marginEnd="100dp"
+            app:labelVisibilityMode="unlabeled"/>
+    </com.google.android.material.bottomappbar.BottomAppBar>
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/bab_fab"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:clickable="true"
+        app:layout_anchor="@id/bab"
+        android:tint="@color/colorWhite"
+        android:backgroundTint="@color/colorBlue"
+        app:borderWidth="0dp"
+        app:srcCompat="@drawable/ic_baseline_emoji_food_beverage_24" />
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

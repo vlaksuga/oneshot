@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "1038863052573",
+    "project_id": "coffeeortea-65f67",
+    "storage_bucket": "coffeeortea-65f67.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1038863052573:android:83e115569df4bb9a803bf4",
+        "android_client_info": {
+          "package_name": "com.rockteki.aa"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1038863052573-706m6qfuthucelhbn5dfu8e1ittb282n.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.rockteki.aa",
+            "certificate_hash": "b31e70b475f9493f308e43f089f851952f61050e"
+          }
+        },
+        {
+          "client_id": "1038863052573-4s4sg0smok3c2rlnlm8qa7l3kk59oh98.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAOkKTpXDJTjkPelBU8L2DzUo7VBatYx0o"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1038863052573-4s4sg0smok3c2rlnlm8qa7l3kk59oh98.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

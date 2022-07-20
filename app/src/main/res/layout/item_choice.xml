@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/cardView_choice_item"
+    android:layout_width="match_parent"
+    android:layout_height="150dp"
+    app:layout_constraintTop_toBottomOf="@+id/constraintLayout2">
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:id="@+id/cardView_item_choice_close"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="24dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/cardView_item_choice_product_thumb"
+            app:srcCompat="@drawable/ic_baseline_close_24" />
+
+        <com.google.android.material.imageview.ShapeableImageView
+            android:id="@+id/cardView_item_choice_product_thumb"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_marginStart="24dp"
+            android:background="@color/colorBlue"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:shapeAppearanceOverlay="@style/roundedImageView"
+            app:srcCompat="@drawable/ice_americano" />
+
+        <TextView
+            android:id="@+id/cardView_item_choice_product_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="24dp"
+            android:textStyle="bold"
+            android:text="아이스 아메리카노"
+            app:layout_constraintStart_toEndOf="@+id/cardView_item_choice_product_thumb"
+            app:layout_constraintTop_toTopOf="@+id/cardView_item_choice_product_thumb" />
+
+        <TextView
+            android:id="@+id/cardView_item_choice_product_size"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:text="(LARGE)"
+            app:layout_constraintStart_toStartOf="@+id/cardView_item_choice_product_name"
+            app:layout_constraintTop_toBottomOf="@+id/cardView_item_choice_product_name" />
+
+        <TextView
+            android:id="@+id/cardView_item_choice_quantity"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:text="1 -"
+            app:layout_constraintBottom_toBottomOf="@+id/cardView_item_choice_product_size"
+            app:layout_constraintStart_toEndOf="@+id/cardView_item_choice_product_size" />
+
+        <TextView
+            android:id="@+id/cardView_item_choice_total_price"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:text="3,300원"
+            android:textStyle="bold"
+            app:layout_constraintStart_toEndOf="@+id/cardView_item_choice_quantity"
+            app:layout_constraintTop_toTopOf="@+id/cardView_item_choice_quantity" />
+
+        <TextView
+            android:id="@+id/cardView_item_choice_memo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ems="13"
+            android:maxLines="3"
+
+            android:text="시럽 5번 짜주세요 제발 부탁드릴게요. 안그러면 저울어버릴지도 몰라요"
+            app:layout_constraintBottom_toBottomOf="@+id/cardView_item_choice_product_thumb"
+            app:layout_constraintStart_toStartOf="@+id/cardView_item_choice_product_size" />
+
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.cardview.widget.CardView>
